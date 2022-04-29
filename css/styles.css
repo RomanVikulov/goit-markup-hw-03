@@ -27,7 +27,8 @@ h3,
 h4,
 h5,
 h6 {
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 ul,
@@ -47,8 +48,9 @@ button {
 /* Studio */
 
 .container {
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0px auto;
+  padding-left: 15px;
+  padding-right: 15px;
   width: 1200px;
   outline: 2px solid tomato;
 }
@@ -152,6 +154,8 @@ button {
 /* Особенности */
 
 .feature {
+  padding-top: 94px;
+  padding-bottom: 94px;
   color: var(--primary-text-color);
 }
 
@@ -160,6 +164,7 @@ button {
 }
 
 .feature-title {
+  margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -180,16 +185,28 @@ button {
 
 /* Деятельности */
 
+.about {
+  padding-bottom: 94px;
+}
+
 .about-title {
-  color: var(--primary-text-color);
+  margin-bottom: 50px;
+
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
+
+  color: var(--primary-text-color);
 }
 
 /* Команда */
+
+.team {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 
 .team-title {
   font-weight: 700;
@@ -201,6 +218,7 @@ button {
 }
 
 .team-list {
+  margin-top: 50px;
   list-style: none;
 }
 
