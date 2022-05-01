@@ -52,8 +52,6 @@ button {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0px auto;
-
-  /* outline: 2px solid tomato; */
 }
 
 /* Логотип в шапке */
@@ -313,11 +311,21 @@ button {
 /* Подвал */
 
 .footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: var(--back-color);
+}
+
+.logo-footer {
+  margin-bottom: 20px;
 }
 
 .logo-studio {
   color: var(--fon-color);
+}
+
+.footer-item:not(:last-child) {
+  margin-bottom: 9px;
 }
 
 .address {
