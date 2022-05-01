@@ -52,8 +52,6 @@ button {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0px auto;
-
-  outline: 2px solid tomato;
 }
 
 /* Логотип в шапке */
@@ -175,6 +173,8 @@ button {
 }
 
 .hero-button {
+  width: 200px;
+  height: 50px;
   padding: 10px 32px;
   display: inline-block;
   font-family: inherit;
@@ -207,7 +207,6 @@ button {
 
 .feature-item {
   width: 270px;
-  background-color: tomato;
 }
 
 .feature-item .feature-title {
@@ -280,21 +279,36 @@ button {
 }
 
 .team-list {
+  display: flex;
   margin-top: 50px;
   list-style: none;
+}
+
+.team-block {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.team-item:not(:last-child) {
+  margin-right: 30px;
 }
 
 .team-name {
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.18;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
 }
 
 .team-position {
+  padding-top: 10px;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
+  text-align: center;
   letter-spacing: 0.03em;
+
   color: var(--secondary-color);
 }
 
