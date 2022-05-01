@@ -418,6 +418,18 @@ button {
 .project-container {
   width: calc((100% - 60px) / 3);
   margin-right: 30px;
+
+  border-right-width: 1px;
+  border-right-style: solid;
+  border-right-color: #eeeeee;
+
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #eeeeee;
+
+  border-left-width: 1px;
+  border-left-style: solid;
+  border-left-color: #eeeeee;
 }
 
 .project-container:nth-child(-n + 6) {
