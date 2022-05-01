@@ -52,6 +52,8 @@ button {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0px auto;
+
+  outline: 2px solid tomato;
 }
 
 /* Логотип в шапке */
@@ -205,10 +207,6 @@ button {
   margin-right: 30px;
 }
 
-.feature-item {
-  width: 270px;
-}
-
 .feature-item .feature-title {
   margin-bottom: 10px;
   font-weight: 700;
@@ -347,10 +345,17 @@ button {
 
 /* Portfolio */
 
-/* Список проектов */
+/* Кнопки фильтра */
 
 .button {
+  display: flex;
   list-style: none;
+  justify-content: center;
+}
+
+.button-item:not(:last-child) {
+  margin-right: 8px;
+  margin-bottom: 50px;
 }
 
 .btn-btn {
@@ -367,6 +372,7 @@ button {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
+  padding: 6px 22px;
 }
 
 .button-btn:hover,
@@ -374,6 +380,8 @@ button {
   background-color: #2196f3;
   color: #ffffff;
 }
+
+/* Список проектов */
 
 .project-title {
   font-weight: 700;
@@ -388,4 +396,18 @@ button {
   line-height: 1.88;
   letter-spacing: 0.03em;
   color: #757575;
+}
+
+.project-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.project-container {
+  width: calc((100% - 60px) / 3);
+  margin-right: 30px;
+}
+
+.project-container:nth-child(3n) {
+  margin-right: 0px;
 }
