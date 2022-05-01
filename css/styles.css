@@ -49,13 +49,14 @@ button {
 
 .container {
   width: 1200px;
-  margin: 0px auto;
   padding-left: 15px;
   padding-right: 15px;
+  margin: 0px auto;
+
   outline: 2px solid tomato;
 }
 
-/* Шапка */
+/* Логотип в шапке */
 .logo {
   font-family: 'Raleway';
   font-weight: 700;
@@ -92,6 +93,7 @@ button {
 
 .nav-list {
   display: flex;
+  margin-left: 93px;
 }
 
 .nav .nav-item + .nav-item {
@@ -119,6 +121,7 @@ button {
 
 .header-list {
   display: flex;
+  margin-left: auto;
 }
 
 .header-list .header-item + .header-item {
@@ -153,6 +156,9 @@ button {
 /* Герой */
 
 .hero {
+  padding-top: 200px;
+  padding-bottom: 280px;
+
   background: var(--back-color);
   text-align: center;
 }
@@ -169,6 +175,7 @@ button {
 }
 
 .hero-button {
+  padding: 10px 32px;
   display: inline-block;
   font-family: inherit;
   font-size: 16px;
@@ -190,10 +197,20 @@ button {
 }
 
 .feature-list {
+  display: flex;
   list-style: none;
 }
 
-.feature-title {
+.feature-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.feature-item {
+  width: 270px;
+  background-color: tomato;
+}
+
+.feature-item .feature-title {
   margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
@@ -207,6 +224,7 @@ button {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--secondary-color);
+  max-width: 270px;
 }
 
 .section-text {
