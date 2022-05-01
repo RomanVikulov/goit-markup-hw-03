@@ -48,10 +48,10 @@ button {
 /* Studio */
 
 .container {
+  width: 1200px;
   margin: 0px auto;
   padding-left: 15px;
   padding-right: 15px;
-  width: 1200px;
   outline: 2px solid tomato;
 }
 
@@ -81,16 +81,32 @@ button {
   border-bottom: 1px solid #ececec;
 }
 
+.container.header-nav {
+  display: flex;
+  align-items: center;
+}
+
 .header-logo {
   color: black;
 }
 
+.nav-list {
+  display: flex;
+}
+
+.nav .nav-item + .nav-item {
+  margin-left: 50px;
+}
+
 .nav-link {
+  display: block;
+
+  color: var(--primary-text-color);
+
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: var(--primary-text-color);
   text-decoration: none;
 }
 
@@ -99,6 +115,14 @@ button {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+}
+
+.header-list {
+  display: flex;
+}
+
+.header-list .header-item + .header-item {
+  margin-left: 50px;
 }
 
 .header-link-mail,
