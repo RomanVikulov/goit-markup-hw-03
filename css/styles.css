@@ -249,6 +249,19 @@ button {
   color: var(--primary-text-color);
 }
 
+.icon {
+  display: flex;
+}
+
+.about-icon {
+  display: inline-block;
+  max-width: 370px;
+}
+
+.about-icon:not(:last-child) {
+  margin-right: 30px;
+}
+
 /* Команда */
 
 .team {
