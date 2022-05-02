@@ -55,6 +55,10 @@ button {
 }
 
 /* Логотип в шапке */
+.header .logo {
+  margin-bottom: 0px;
+}
+
 .logo {
   font-family: 'Raleway';
   font-weight: 700;
